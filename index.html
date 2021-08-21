@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>iMac Config & Price</title>
+</head>
+<!-- Head Ends -->
+<!---------------------- 
+    Body Starts 
+-------------------------->
+
+<body>
+    <!-------------------------
+            Header Starts 
+    --------------------------->
+    <header class="container-fluid bg-light d-flex align-items-center justify-content-center header-height mb-4">
+        <h1>Welcome to Our iMac Configuration Page</h1>
+    </header>
+    <!-------------------------
+        Header Ends
+    --------------------------->
+    <!-------------------------
+        Main Content Starts 
+    --------------------------->
+    <main class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-md-6">
+                    <img class="img img-fluid" src="img/mac.png" alt="">
+                </div>
+                <!-- Configuration Button Starts -->
+                <div class="col-xxl-6 col-xl-6 col-md-6">
+                    <h2>Customize your Blue 24-inch iMac with Apple M1 Chip.</h2>
+                    <p class="mb-5">Apple M1 chip with 8-core CPU with 4 performance core and 4 efficiency core, 7-core
+                        GPU, and 16 core Neural Engine 8GB unified memory 256GB SSD stroage Two Thunderboit / USB 4
+                        ports Magic Keyboard - US English.</p>
+                    <!-- Memory Button Starts -->
+                    <div class="memory mb-5">
+                        <h5>Memory</h5>
+                        <div class="d-flex">
+                            <button id="eightGbMemory" class="btn btn-outline-secondary">8GB unified memory</button>
+                            <button id="sixteenGbMemory" class="btn btn-outline-secondary ml-4">16GB unified
+                                memory</button>
+                        </div>
+                    </div>
+                    <!-- Memory Button Ends -->
+                    <!-- Storage Button Starts -->
+                    <div class="stroage mb-5">
+                        <h5>Stroage</h5>
+                        <div class="d-flex">
+                            <button id="storage256" class="btn btn-outline-secondary">256GB SSD Stroage</button>
+                            <button id="storage512" class="btn btn-outline-secondary ml-4">512GB SSD Stroage</button>
+                            <button id="storage1tb" class="btn btn-outline-secondary ml-4">1TB SSD Stroage</button>
+                        </div>
+                    </div>
+                    <!-- Storage Button Ends -->
+                    <!-- Delivery Button Starts -->
+                    <div class="delevery mb-5">
+                        <h5>Choose Your Delivery Options</h5>
+                        <div class="d-flex">
+                            <button id="freeDelivery" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime
+                                Delivery</button>
+                            <button id="premiumDelivery" class="btn btn-outline-secondary ml-4">Friday, Aug 21 Delivery
+                                Charge $20</button>
+                        </div>
+                    </div>
+                    <!-- Delivery Button Ends -->
+                </div>
+                <!-- Configuration Button Ends -->
+            </div>
+            <!-- Price List Starts -->
+            <div class="row mb-4">
+                <div class="col-xxl-6 col-xl-6 col-md-6"></div>
+                <div class="col-xxl-5 col-xl-5 col-md-5">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <p>Best Price</p>
+                        <p>$<span id="bestCost">1299</span></p>
+                    </div>
+                    <hr class="onepexel">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <p>Extra Memory Cost</p>
+                        <p>$<span id="extraMemory">0</span></p>
+                    </div>
+                    <hr class="onepexel">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <p>Extra Stroage Cost</p>
+                        <p>$<span id="extraStorage">0</span></p>
+                    </div>
+                    <hr class="onepexel">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <p>Delivery Charge</p>
+                        <p>$<span id="extraDelivery">0</span></p>
+                    </div>
+                    <hr class="total-hr">
+                    <div class="d-flex justify-content-between fw-bold">
+                        <p>Total Price</p>
+                        <p>$<span id="totalPrice">1299</span></p>
+                    </div>
+                    <hr class="onepexel">
+                    <!-- Promo Code Apply Starts -->
+                    <div class="promo mt-5 mb-4">
+                        <h5 class="fw-bold">Apply Your Promo Code.</h5>
+                        <div class="input-group">
+                            <input id="promoInput" type="text" class="form-control" aria-label="Recipient's username"
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text promo-button" id="basic-addon2">Apply</span>
+                        </div>
+                    </div>
+                    <!-- Promo Code Apply Ends -->
+                </div>
+            </div>
+            <!-- Price List Ends -->
+        </div>
+    </main>
+    <!-------------------------
+        Main Content Ends 
+    --------------------------->
+    <!-------------------------
+        Footer Starts 
+    --------------------------->
+    <footer class="container-fluid bg-light d-flex align-items-center justify-content-center header-height">
+        <h2 class=total-price>Total: $<span id="footerFinalCost">1299</span></h2>
+    </footer>
+    <!-------------------------
+            Footer Starts 
+    --------------------------->
+    <!-- JavaScript Files -->
+    <script src="cart.js"></script>
+</body>
+<!-------------------------
+        Body Ends
+--------------------------->
+
+</html>
+<!--------------------------------------------
+            Assignment-5
+    Thank You Programming Hero Examinar.
+            Have a Nice Day
+---------------------------------------------->
